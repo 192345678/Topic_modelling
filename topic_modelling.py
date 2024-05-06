@@ -1,7 +1,7 @@
 from transformers import DistilBertConfig, AutoModelForSequenceClassification, AutoTokenizer, AutoConfig,BertForSequenceClassification,BertConfig, BertTokenizer,TFBertForSequenceClassification
 # 加载模型和分词器，并选择对应的配置类
 import numpy as np
-model = TFBertForSequenceClassification.from_pretrained("/", config=BertConfig.from_pretrained("../model/"))
+model = TFBertForSequenceClassification.from_pretrained("/", config=BertConfig.from_pretrained("model/"))
 tokenizer = BertTokenizer.from_pretrained("/")
 
 # 示例用法：使用模型进行推理
